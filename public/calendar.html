@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="logo.png" sizes="16x16">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<base href="home.html">
+	<title>Calendar</title>
+<link rel="stylesheet" type="text/css" href="calendar.css">
+</head>
+<body>
+  <header id="pageHeader">
+<div class="page">
+  <nav class="menu">
+    <ul class="menu__list">
+      <li class="menu__group"><a href="home.html" class="menu__link">Home</a></li>
+      <li class="menu__group"><a href="help.html" class="menu__link">Help</a></li>
+      <div class="dropdown">
+      <li class="menu__group"><a href="#0" class="menu__link">Start planning</a></li>
+    <div class="dropdown-content">
+      <a href="task.html">Add task</a>
+      <a href="plan.html">Week Schedule</a>
+      <a href="calendar.html">Calendar</a>
+    </div>
+  </div> 
+    </ul>
+  </nav>
+  <div class="sbox">
+  <img src="Search-512.png" alt="logo">
+</div>
+  <form class="search" action="">
+  <input type="search" placeholder="Search here..." required>
+  <button type="submit">Search</button>
+</form>   
+</div>
+</header>
+<article id="mainArticle">
+  <div id="page-body">
+    <!-- [PERIOD SELECTOR] -->
+    <div id="cal-date">
+      <select id="cal-mth"></select>
+      <select id="cal-yr"></select>
+      <input id="cal-set" type="button" value="SET"/>
+    </div>
+
+    <!-- [CALENDAR] -->
+    <div id="cal-container"></div>
+
+    <!-- [EVENT] -->
+    <div id="cal-event"></div>
+  </div>
+</article>
+<nav id="mainNav">
+  <div class="sidebar">
+  <a href="task.html">New task</a>
+  <a href="today.html">Today</a>
+  <a href="plan.html">Next 7 days</a>
+  <a class="active" href="calendar.html">Calendar</a>
+  <div class="pic">
+    <img src="f097a4.png" alt="pic">
+  </div>
+</div>
+</nav>
+<footer id="pageFooter">
+  <p>Welcome to Project Manager!</p>
+<div class="fbox">
+  <img src="logo.png" alt="logo">
+</div>
+  <ul class="map">
+  <li><a href="help.html">Help</a></li>
+  <li><a class="active" href="home.html">Home</a></li>
+  <li><a href="task.html">Add task</a></li>
+  <li><a href="plan.html">Week Schedule</a></li>
+  <li><a href="calendar.html">Calendar</a></li>
+</ul>
+</div>
+</footer>
+<script src="calendar.js" type="text/javascript"></script>
+</body>
+</html>

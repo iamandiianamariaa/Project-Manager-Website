@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include('../partials/head'); -%>
+	<title>Next 7 days</title>
+<link rel="stylesheet" type="text/css" href="plan.css">
+</head>
+<body>
+  <header id="pageHeader">
+    <%- include('../partials/header'); -%>
+</header>
+  <article id="mainArticle">
+<div class="gantt">
+
+  <span class="d-1"></span>
+  <span class="d-2"></span>
+  <span class="d-3"></span>
+  <span class="d-4"></span>
+  <span class="d-5"></span>
+  <span class="d-6"></span>
+
+  <h3 class="h-sun">sun</h3>
+  <h3 class="h-mon">mon</h3>
+  <h3 class="h-tue">tue</h3>
+  <h3 class="h-wed">wed</h3>
+  <h3 class="h-thu">thu</h3>
+  <h3 class="h-fri">fri</h3>
+  <h3 class="h-sat">sat</h3>
+  
+  <div class="t-1" style="grid-column: sun-morning / mon-night;">Take the dog for a walk</div>
+  <div class="t-2" style="grid-column: mon-morning / sat-night;">Make some pasta</div>
+  <div class="t-3" style="grid-column: sun-morning / tue-midday;">Prepare talk on global warming</div>
+  <div class="t-4" style="grid-column: tue-midday / wed-night;">Sleep</div>
+  <div class="t-5" style="grid-column: mon-morning / wed-midday;">Go for a walk</div>
+  <div class="t-6" style="grid-column: mon-night / fri-morning;">Go to the gym</div>
+  <div class="t-7" style="grid-column: wed-midday /sat-night;">Watch a movie at the cinema</div>
+  <div class="t-8" style="grid-column: wed-midday / thu-midday;">Sleep</div>
+  <div class="t-9" style="grid-column: thu-midday / sat-night;">Plan the following week’s tasks</div>
+  
+</div>
+</article>
+  <nav id="mainNav">
+  <div class="sidebar">
+  <a href="/task">New task</a>
+  <a href="/today">Today</a>
+  <a class="active" href="/plan">Next 7 days</a>
+  <a href="/calendar">Calendar</a>
+  <div class="pic">
+    <img src="92477d.png" alt="pic">
+  </div>
+</div>
+</nav>
+  <footer id="pageFooter">
+    <%- include('../partials/footer'); -%>
+</footer>
+</body>
+</html>

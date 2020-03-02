@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="logo.png" sizes="16x16">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<base href="home.html">
+	<title>Home</title>
+<link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body>
+  <header id="pageHeader">
+<div class="page">
+  <nav class="menu">
+    <ul class="menu__list">
+      <li class="menu__group"><a href="home.html" class="menu__link">Home</a></li>
+      <li class="menu__group"><a href="help.html" class="menu__link">Help</a></li>
+      <div class="dropdown">
+      <li class="menu__group"><a href="#0" class="menu__link">Start planning</a></li>
+    <div class="dropdown-content">
+      <a href="task.html">Add task</a>
+      <a href="plan.html">Week Schedule</a>
+      <a href="calendar.html">Calendar</a>
+    </div>
+  </div> 
+    </ul>
+  </nav>
+  <div class="sbox">
+  <img src="Search-512.png" alt="logo">
+</div>
+  <form class="search" action="">
+  <input type="search" placeholder="Search here..." required>
+  <button type="submit">Search</button>
+</form>   
+</div>
+</header>
+  <article id="mainArticle">
+  	<div class="obox">
+     <img src="shutterstock_1245808624.jpg" alt="logo">
+     <div class="text-block">
+       <h3>We're all given the same hours in a day</h3>
+       <h3>Live them.</h3>
+       <p>Pick a tool that works for you. Project Manager lets you plan, collaborate </p>
+       <p>and track so you can achieve more and get work done.</p>
+     </div>
+    </div>
+  <div class="buton">
+  <button><a href="help.html">Get Started</a></button>
+  </div>
+  <div class="help">
+  <div id="wave-container">
+  <div class="skew-c"></div>
+<div class="colour-block">
+  <div class="pic">
+    <img src="020fe1.png" id="a" alt="pic" onclick="change()"/>
+  </div>
+  <script>
+    var image =  document.getElementById("a");
+
+    function change()
+    {
+        if (image.getAttribute('src') == "020fe1.png")
+        {
+            image.src = "promo-image.1547668953.png";
+        }
+        else
+        {
+            image.src = "020fe1.png";
+        }
+    }
+        </script>
+  <h1>Organizing your time has never been easier</h1>
+  <p>You can add tasks, activities and set deadlines with just one click.</p>
+</div>
+<div class="skew-cc"></div>
+<div class="white-block">
+  <div class="pic">
+    <img src="promo-image.1547668953.png" alt="pic">
+  </div>
+  <h1>Everything in one place</h1>
+  <p>You can set and see your calendar and weekly or daily activities.</p>
+</div>
+<div class="skew-c"></div>
+<div class="colour-block">
+    <div class="pic">
+    <img src="f097a4.png" alt="pic">
+  </div>
+  <h1>Helps you become more efficient</h1>
+  <p>By adding deadlines to your activities and organizing your tasks you increase your productivity and become more efficient at work. Project Mananager is a free and easy-to-use tool that will change your life.</p>
+</div>
+</div>
+</div>
+  </article>
+  <footer id="pageFooter">
+  <p>Welcome to Project Manager!</p>
+<div class="fbox">
+  <img src="logo.png" alt="logo">
+</div>
+  <ul class="map">
+  <li><a href="help.html">Help</a></li>
+  <li><a class="active" href="home.html">Home</a></li>
+  <li><a href="task.html">Add task</a></li>
+  <li><a href="plan.html">Week Schedule</a></li>
+  <li><a href="calendar.html">Calendar</a></li>
+</ul>
+</div>
+</footer>
+</body>
+</html>

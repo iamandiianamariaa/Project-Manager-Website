@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include('../partials/head'); -%>
+	<title>Add Task</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="task.css">
+</head>
+<body>
+  <header id="pageHeader">
+    <%- include('../partials/header'); -%>
+</header>
+<article>
+  <div class="container">
+        <div class="header">
+            <div class="clear">
+                <i class="fa fa-refresh"></i>
+            </div>
+            <div id="date"></div>
+        </div>
+        <div class="content">
+            <ul id="list">
+            </ul>
+        </div>
+        <div class="add-to-do">
+            <i class="fa fa-plus-circle"></i>
+            <input type="text" id="input" placeholder="Add a to-do">
+        </div>
+    </div>
+</article>
+<nav id="mainNav">
+  <div class="sidebar">
+  <a class="active" href="/task">New task</a>
+  <a href="/today">Today</a>
+  <a href="/plan">Next 7 days</a>
+  <a href="/calendar">Calendar</a>
+  <div class="pic">
+    <img src="020fe1.png" alt="pic">
+  </div>
+</div>
+</nav>
+  <footer id="pageFooter">
+    <%- include('../partials/footer'); -%>
+</footer>
+<script src="/js/app.js"></script>
+</body>
+</html>

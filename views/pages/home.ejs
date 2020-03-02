@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include('../partials/head'); -%>
+	<title>Home</title>
+<link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body>
+  <header id="pageHeader">
+    <%- include('../partials/header'); -%>
+</header>
+  <article id="mainArticle">
+  	<div class="obox">
+     <img src="shutterstock_1245808624.jpg" alt="logo">
+     <div class="text-block">
+       <h3>We're all given the same hours in a day</h3>
+       <h3>Live them.</h3>
+       <p>Pick a tool that works for you. Project Manager lets you plan, collaborate </p>
+       <p>and track so you can achieve more and get work done.</p>
+     </div>
+    </div>
+  <div class="buton">
+  <button><a href="/user">Get Started</a></button>
+  </div>
+  <div class="help">
+  <div id="wave-container">
+  <div class="skew-c"></div>
+<div class="colour-block">
+  <div class="pic">
+    <img src="020fe1.png" id="a" alt="pic" onclick="change()"/>
+  </div>
+  <script>
+    var image =  document.getElementById("a");
+
+    function change()
+    {
+        if (image.getAttribute('src') == "020fe1.png")
+        {
+            image.src = "promo-image.1547668953.png";
+        }
+        else
+        {
+            image.src = "020fe1.png";
+        }
+    }
+        </script>
+  <h1>Organizing your time has never been easier</h1>
+  <p>You can add tasks, activities and set deadlines with just one click.</p>
+</div>
+<div class="skew-cc"></div>
+<div class="white-block">
+  <div class="pic">
+    <img src="promo-image.1547668953.png" alt="pic">
+  </div>
+  <h1>Everything in one place</h1>
+  <p>You can set and see your calendar and weekly or daily activities.</p>
+</div>
+<div class="skew-c"></div>
+<div class="colour-block">
+    <div class="pic">
+    <img src="f097a4.png" alt="pic">
+  </div>
+  <h1>Helps you become more efficient</h1>
+  <p>By adding deadlines to your activities and organizing your tasks you increase your productivity and become more efficient at work. Project Mananager is a free and easy-to-use tool that will change your life.</p>
+</div>
+</div>
+</div>
+  </article>
+  <footer id="pageFooter">
+    <%- include('../partials/footer'); -%>
+</footer>
+</body>
+</html>

@@ -1,0 +1,487 @@
+body { 
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "nav article article"
+    "footer footer footer";
+  grid-template-rows: 80px 1fr 5%;  
+  grid-template-columns: 20% 1fr;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 350vh;
+  margin: 0;
+  }  
+header{
+  padding: 1.2em;
+  background: #E14B3C;
+}
+nav,article{
+  padding: 1.2em;
+  background: #fafafa;
+  }
+footer{
+  padding: 1.2em;
+  background: white;
+}
+#pageHeader {
+  grid-area: header;
+  }
+#pageFooter {
+  grid-area: footer;
+  }
+#mainNav { 
+  grid-area: nav; 
+  }
+#mainArticle { 
+  grid-area: article;      
+  }
+
+p {
+  font-size:20px;
+  font-family:'Raleway', serif;
+}
+
+.dropdown {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: #2F4F4F;
+  font-family: inherit;
+  text-align: center;
+  width: 200px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 16px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+}
+
+.sbox{
+  display: flex;
+  justify-content: left;
+}
+.sbox img {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 10px;
+  right: 600px;
+}
+
+.hbox{
+  display: flex;
+  justify-content: left;
+}
+.hbox img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 27px;
+  left: 130px;
+}
+
+.cbox{
+  display: flex;
+  justify-content: left;
+}
+.cbox img {
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  top: 30px;
+  left: 240px;
+}
+
+.pbox{
+  display: flex;
+  justify-content: left;
+}
+.pbox img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 28px;
+  left: 335px;
+}
+.fbox{
+  display: flex;
+  justify-content: center;
+}
+.fbox img{
+  position: relative;
+  width: 100px;
+  height: 70px;
+  top: -60px;
+  left: -440px;
+}
+.map{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  position: absolute;
+  top: 2580px;
+  left: 500px;
+  list-style-type: none;
+}
+.map li{
+  display: inline-block;
+  padding: 10px;
+}
+.map a{
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+}
+.map a:hover{
+  color: red;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#cal-date {
+  margin: 10px 0;
+}
+#cal-mth, #cal-yr, #cal-set {
+  padding: 10px;
+  font-size: 1.2em;
+  border: 0;
+  background: #379683;
+  color: #fff;
+}
+
+/* [CALENDAR] */
+#calendar {
+  width: 100%;
+  border-collapse: collapse;
+}
+#calendar tr.head td {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background: #379683;
+  padding: 15px;
+  text-align: center;
+}
+#calendar tr.day td {
+  border: 1px solid #ddd;
+  width: 14.28%;
+  padding: 15px 5px;
+  vertical-align: top;
+  background: #dfede9;
+}
+#calendar tr.day td:hover {
+  background: #fff9e4;
+}
+#calendar tr td.blank {
+  background: #eae7dc;
+}
+#calendar .dd {
+  font-size: 1.2em;
+  color: #999;
+}
+#calendar .evt {
+  margin-top: 5px;
+  font-size: 0.8em;
+  font-weight: bold;
+  overflow: hidden;
+  color: #ff5d5d;
+}
+
+/* [ADD/EDIT EVENT] */
+#cal-event form {
+  padding: 15px;
+  margin-top: 20px;
+  background: #dfede9;
+  border: 1px solid #ddd;
+}
+#cal-event h1 {
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+#evt-date {
+  color: #999;
+  margin: 10px 0;
+}
+#cal-event textarea {
+  display: block;
+  box-sizing: padding-box;
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  resize: none;
+}
+#cal-event input[type=button], #cal-event input[type=submit] {
+  padding: 10px;
+  margin: 5px;
+  font-size: 1.2em;
+  border: 0;
+  background: #ea4c4c;
+  color: #fff;
+}
+
+.sidebar {
+  float: right;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  height: 100.5%;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  font-family: 'Alegreya', serif;
+}
+ 
+.sidebar a.active {
+  background-color: #E14B3C;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+.pic{
+  display: flex;
+}
+.pic img{
+  position: absolute;
+  left: 100px;
+  width: 200px;
+  height: 180px;
+}
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 600px) {
+  body { 
+    grid-template-areas: 
+      "header"
+      "article"
+      "footer";
+    grid-template-rows: 80px 1fr 60%;  
+    grid-template-columns: 100%;
+    font-size: 0.75em;
+ }
+ .search, .search input, .search button{
+  display: none;
+ }
+ .navbar a,.dropdown .dropbtn{
+  font-size: 15px;
+  color: #2F4F4F;
+  text-align: center;
+  padding: 14px 32px;
+ }
+ .hbox, .pbox, .cbox,.fbox, #pageFooter p{
+  display: none;
+ }
+ .map{
+  position: absolute;
+  left: 0px;
+  top: 2100px;
+ }
+  .sidebar {
+  width: 20%;
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  }
+  .sidebar a {
+    display: block;
+  }
+  #cal-mth,#cal-yr,#cal-set{
+    float: right;
+  }
+}
+/* 
+=====
+EFFECT FADING OUT FOR SIBLINGS MENU OPTIONS 
+=====
+*/
+
+.menu:hover .menu__link:not(:hover){
+  color: black;
+}
+
+/* 
+=====
+MENU STYLES
+=====
+*/
+
+/* core styles */
+
+.menu__list{
+  display: flex;  
+  text-align: center;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none; 
+}
+
+.menu__group{
+  flex-grow: 1;
+}
+
+.menu__link{
+  display: block;
+  height: 52%;
+}
+
+/* skin */
+
+.menu{
+  background-color: #E14B3C;
+  position: absolute;
+  top: 0px;
+  width: 50%;
+  left: 0px;
+  height: 5%;
+}
+
+.menu__link{
+  padding: 1rem 1.5rem;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* hover animation */
+
+.menu__link{
+  position: relative;
+  overflow: hidden;
+
+  will-change: color;
+  transition: color .25s ease-out;  
+}
+
+.menu__link::before, 
+.menu__link::after{
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #fff;
+
+  will-change: width;
+  transition: width .1s ease-out;
+
+  position: absolute;
+  bottom: 0;
+}
+
+.menu__link::before{
+  left: 50%;
+  transform: translateX(-50%); 
+}
+
+.menu__link::after{
+  right: 50%;
+  transform: translateX(50%); 
+}
+
+.menu__link:hover::before, 
+.menu__link:hover::after{
+  width: 100%;
+  transition-duration: .2s;
+}
+
+.page{
+  box-sizing: border-box;
+  width: 100%;
+  order: 1;
+  margin: auto;
+}
+
+.search {
+  width: 500px;
+  height: 40px;
+  margin: auto;
+  background-color:transparent;
+  margin-top: 5px;
+  margin-right: 80px;
+}
+
+.search :hover{
+  border-radius:  3px;
+  border: 1px solid #2F4F4F;
+  background: #FFF8DC;
+}
+
+.search input {
+  width: 370px;
+  padding: 10px 5px;
+  float: left;
+  color: #2F4F4F;
+  border: 0;
+  background: transparent;
+  background-color: white;
+  border-radius: 3px 0 0 3px;}
+
+.search input:focus {
+  outline: 0;
+  background:transparent;}
+
+.search button {
+  position: relative;
+  float: right;
+  border: 2px solid #E14B3C;
+  padding: 0;
+  cursor: pointer;
+  height: 39px;
+  width: 120px;
+  color: #2F4F4F;
+  background: #FFF8DC;
+}   
+
+.search button:hover {
+  background: #FFF8DC;
+  color:#444;}
+.search button:active {
+  box-shadow: 0px 0px 12px 0px rgba(225, 225, 225, 1);}
+
+.search button:focus {
+  outline: 0;
+}
